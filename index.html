@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftiCo - Creative Crafts & Home Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+<body>
+    <!-- SVG Definitions for gradients -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="instagram-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#f09433;stop-opacity:1" />
+                <stop offset="25%" style="stop-color:#e6683c;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#dc2743;stop-opacity:1" />
+                <stop offset="75%" style="stop-color:#cc2366;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#bc1888;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <div class="wrapper">
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">
+                <span>EN</span>
+            </button>
+            <button class="lang-btn" data-lang="ru">
+                <span>RU</span>
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <img src="images/Logo.svg" alt="CraftiCo Logo" class="logo-img" >
+                        <p class="tagline" data-en="Creative Crafts & Home Solutions" data-ru="Творческие решения для дома и семьи">Creative Crafts & Home Solutions</p>
+                    </div>
+                    <button class="mobile-menu-btn">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                    <nav class="nav">
+                        <a href="#kids" class="nav-link" data-en="CraftiCo.Kids" data-ru="CraftiCo.Kids">CraftiCo.Kids</a>
+                        <a href="#home" class="nav-link" data-en="CraftiCo.Home" data-ru="CraftiCo.Home">CraftiCo.Home</a>
+                        <a href="#play" class="nav-link" data-en="CraftiCo.Play" data-ru="CraftiCo.Play">CraftiCo.Play</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- CraftiCo.kids Section -->
+            <section id="kids" class="section kids-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 data-en="CraftiCo.Kids" data-ru="CraftiCo.Kids">CraftiCo.Kids</h2>
+                        <p class="section-description" data-en="Discover the magical world of creativity where children and parents come together to learn, grow, and create beautiful things with their own hands. Our comprehensive programs combine traditional crafting techniques with modern educational approaches, helping kids develop fine motor skills, creativity, and confidence while building precious memories with their families. From basic stitches to complex projects, we guide every step of your creative journey with patience, care, and lots of fun!" data-ru="Откройте волшебный мир творчества, где дети и родители вместе учатся, растут и создают прекрасные вещи своими руками. Наши комплексные программы сочетают традиционные техники рукоделия с современными образовательными подходами, помогая детям развивать мелкую моторику, творческие способности и уверенность в себе, создавая драгоценные воспоминания с семьёй. От первых стежков до сложных проектов — мы сопровождаем каждый шаг вашего творческого пути с терпением, заботой и множеством весёлых моментов!">Discover the magical world of creativity where children and parents come together to learn, grow, and create beautiful things with their own hands. Our comprehensive programs combine traditional crafting techniques with modern educational approaches, helping kids develop fine motor skills, creativity, and confidence while building precious memories with their families. From basic stitches to complex projects, we guide every step of your creative journey with patience, care, and lots of fun!</p>
+                    </div>
+
+                    <!-- Characters Section -->
+                    <div class="characters">
+                        <h3 data-en="Meet Our Characters" data-ru="Наши друзья-помощники">Meet Our Characters</h3>
+                        <div class="characters-grid">
+                            <div class="character">
+                                <div class="character-image">
+                                    <img src="images/pugovka.PNG" alt="Pugovka" loading="lazy">
+                                </div>
+                                <h4 data-en="Pugovka" data-ru="Пуговка">Pugovka</h4>
+                                <p data-en="The cheerful button who loves sewing and teaches children the basics of needlework" data-ru="Веселая пуговка, которая знает все секреты шитья и с радостью делится ими с малышами">The cheerful button who loves sewing and teaches children the basics of needlework</p>
+                            </div>
+                            <div class="character">
+                                <div class="character-image">
+                                    <img src="images/igolochka.png" alt="Igolochka" loading="lazy">
+                                </div>
+                                <h4 data-en="Igolochka" data-ru="Иголочка">Igolochka</h4>
+                                <p data-en="The wise needle who guides little hands through every stitch with patience and care" data-ru="Мудрая иголочка — лучший наставник, который помогает маленьким ручкам освоить каждый стежочек">The wise needle who guides little hands through every stitch with patience and care</p>
+                            </div>
+                            <div class="character">
+                                <div class="character-image">
+                                    <img src="images/nitochka.PNG" alt="Nitochka" loading="lazy">
+                                </div>
+                                <h4 data-en="Nitochka" data-ru="Ниточка">Nitochka</h4>
+                                <p data-en="The playful thread who connects all ideas and brings creative projects to life" data-ru="Озорная ниточка, которая связывает мечты с реальностью и превращает идеи в шедевры">The playful thread who connects all ideas and brings creative projects to life</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Gallery -->
+                    <div class="video-gallery">
+                        <h3 data-en="Creative Journey" data-ru="Мир творчества">Creative Journey</h3>
+                        <div class="splide video-carousel" id="video-carousel">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="video-container">
+                                            <video class="gallery-video" muted loop preload="metadata" poster="">
+                                                <source src="videos/crafting1.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <div class="video-controls">
+                                                <button class="play-pause-btn">▶️</button>
+                                                <input type="range" class="progress-slider" min="0" max="100" step="0.1" value="0">
+                                                <div class="volume-control">
+                                                    <span class="volume-icon">🔉</span>
+                                                    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+                                                </div>
+                                                <button class="fullscreen-btn">⛶️</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="video-container">
+                                            <video class="gallery-video" muted loop preload="metadata" poster="">
+                                                <source src="videos/crafting2.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <div class="video-controls">
+                                                <button class="play-pause-btn">▶️</button>
+                                                <input type="range" class="progress-slider" min="0" max="100" step="0.1" value="0">
+                                                <div class="volume-control">
+                                                    <span class="volume-icon">🔉</span>
+                                                    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+                                                </div>
+                                                <button class="fullscreen-btn">⛶️</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="video-container">
+                                            <video class="gallery-video" muted loop preload="metadata" poster="">
+                                                <source src="videos/crafting3.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <div class="video-controls">
+                                                <button class="play-pause-btn">▶️</button>
+                                                <input type="range" class="progress-slider" min="0" max="100" step="0.1" value="0">
+                                                <div class="volume-control">
+                                                    <span class="volume-icon">🔉</span>
+                                                    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+                                                </div>
+                                                <button class="fullscreen-btn">⛶️</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="video-container">
+                                            <video class="gallery-video" muted loop preload="metadata" poster="">
+                                                <source src="videos/crafting4.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <div class="video-controls">
+                                                <button class="play-pause-btn">▶️</button>
+                                                <input type="range" class="progress-slider" min="0" max="100" step="0.1" value="0">
+                                                <div class="volume-control">
+                                                    <span class="volume-icon">🔉</span>
+                                                    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+                                                </div>
+                                                <button class="fullscreen-btn">⛶️</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="video-container">
+                                            <video class="gallery-video" muted loop preload="metadata" poster="">
+                                                <source src="videos/crafting5.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            <div class="video-controls">
+                                                <button class="play-pause-btn">▶️</button>
+                                                <input type="range" class="progress-slider" min="0" max="100" step="0.1" value="0">
+                                                <div class="volume-control">
+                                                    <span class="volume-icon">🔉</span>
+                                                    <input type="range" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+                                                </div>
+                                                <button class="fullscreen-btn">⛶️</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h3 data-en="Connect With Us" data-ru="Присоединяйтесь к нам">Connect With Us</h3>
+                        <div class="social-buttons">
+                            <a href="https://www.instagram.com/craftico.kids" target="_blank" class="social-btn instagram">
+                                <span class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                                    </svg>
+                                </span>
+                                <span data-en="Follow on Instagram" data-ru="Следите за нами в Instagram">Follow on Instagram</span>
+                            </a>
+                            <a href="https://t.me/craftico_kids" target="_blank" class="social-btn telegram">
+                                <span class="social-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="currentColor"/>
+                                    </svg>
+                                </span>
+                                <span data-en="Join Telegram Channel" data-ru="Наш канал в Telegram">Join Telegram Channel</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Courses Info -->
+                    <div class="courses-info">
+                        <h3 data-en="Educational Courses" data-ru="Наши мастер-классы">Educational Courses</h3>
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <h4 data-en="Basic Sewing" data-ru="Основы шитья">Basic Sewing</h4>
+                                <p data-en="Learn fundamental sewing techniques with fun, engaging lessons designed for children aged 5-10." data-ru="Первые стежки в мир созидания! Игровые уроки шитья для малышей 5-10 лет, где каждое занятие — это приключение.">Learn fundamental sewing techniques with fun, engaging lessons designed for children aged 5-10.</p>
+                            </div>
+                            <div class="course-card">
+                                <h4 data-en="Creative Knitting" data-ru="Волшебство вязания">Creative Knitting</h4>
+                                <p data-en="Discover the joy of knitting through interactive activities that develop fine motor skills and creativity." data-ru="Откроем секреты вязания! Интерактивные занятия, которые развивают ловкость пальчиков и воображение.">Discover the joy of knitting through interactive activities that develop fine motor skills and creativity.</p>
+                            </div>
+                            <div class="course-card">
+                                <h4 data-en="DIY Projects" data-ru="Творческие проекты">DIY Projects</h4>
+                                <p data-en="Explore hands-on DIY projects that encourage problem-solving and artistic expression." data-ru="Своими руками — свои мечты! Познавательные проекты, которые развивают логику и помогают выразить себя через творчество.">Explore hands-on DIY projects that encourage problem-solving and artistic expression.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefits Section -->
+                    <div class="benefits-section">
+                        <h3 data-en="Why Choose CraftiCo.Kids?" data-ru="Почему стоит выбрать CraftiCo.Kids?">Why Choose CraftiCo.Kids?</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon">🎆</div>
+                                <h4 data-en="Expert Guidance" data-ru="Профессиональное сопровождение">Expert Guidance</h4>
+                                <p data-en="Our experienced instructors provide step-by-step guidance, ensuring every child feels confident and supported in their creative journey. With years of experience in child development and crafts education, we know how to make learning both fun and effective." data-ru="Наши опытные преподаватели обеспечивают пошаговое сопровождение, гарантируя, что каждый ребенок чувствует себя уверенно и получает поддержку в своем творческом пути. Имея многолетний опыт в развитии детей и обучении ремеслам, мы знаем, как сделать обучение одновременно увлекательным и эффективным.">Our experienced instructors provide step-by-step guidance, ensuring every child feels confident and supported in their creative journey. With years of experience in child development and crafts education, we know how to make learning both fun and effective.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">🌈</div>
+                                <h4 data-en="Safe Materials" data-ru="Безопасные материалы">Safe Materials</h4>
+                                <p data-en="We use only child-safe, eco-friendly materials that are carefully selected for their quality and safety. All our supplies meet international safety standards, giving parents peace of mind while children explore their creativity. From non-toxic paints to rounded-tip scissors, every tool is designed with safety first." data-ru="Мы используем только безопасные для детей, экологически чистые материалы, тщательно отобранные за их качество и безопасность. Все наши материалы соответствуют международным стандартам безопасности, даря родителям спокойствие, пока дети исследуют свое творчество. От нетоксичных красок до ножниц с закругленными кончиками — каждый инструмент разработан с приоритетом безопасности.">We use only child-safe, eco-friendly materials that are carefully selected for their quality and safety. All our supplies meet international safety standards, giving parents peace of mind while children explore their creativity. From non-toxic paints to rounded-tip scissors, every tool is designed with safety first.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+                                <h4 data-en="Family Bonding" data-ru="Семейное сплочение">Family Bonding</h4>
+                                <p data-en="Our programs are designed to bring families together through shared creative experiences. Parents and children work side by side, creating lasting memories while learning new skills. These precious moments of collaboration help strengthen family bonds and create traditions that last a lifetime." data-ru="Наши программы разработаны для того, чтобы объединять семьи через общий творческий опыт. Родители и дети работают бок о бок, создавая незабываемые воспоминания и изучая новые навыки. Эти драгоценные моменты сотрудничества помогают укрепить семейные узы и создать традиции, которые останутся на всю жизнь.">Our programs are designed to bring families together through shared creative experiences. Parents and children work side by side, creating lasting memories while learning new skills. These precious moments of collaboration help strengthen family bonds and create traditions that last a lifetime.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CraftiCo.home Section -->
+            <section id="home" class="section home-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 data-en="CraftiCo.Home" data-ru="CraftiCo.Home">CraftiCo.Home</h2>
+                        <p class="section-description" data-en="Transform your living space into a haven of style and comfort with our comprehensive interior design and lifestyle consulting services. We offer personalized solutions that reflect your unique personality and lifestyle needs, from complete home makeovers to specific room redesigns. Our expert team provides detailed visual assessments, custom moodboards, and carefully curated product selections that perfectly match your vision and budget. Whether you're looking for furniture that tells your story, textiles that add warmth and character, or decorative elements that create the perfect ambiance, we're here to guide you through every step of creating a space you'll truly love. We also extend our expertise to commercial spaces, helping businesses create environments that inspire and welcome. From sourcing unique pieces to arranging them for maximum impact, we make beautiful, functional design accessible to everyone." data-ru="Превратите ваше жилище в оазис стиля и комфорта с нашими комплексными услугами по дизайну интерьера и консалтингу по образу жизни. Мы предлагаем индивидуальные решения, которые отражают вашу уникальную личность и потребности в образе жизни — от полного преображения дома до переделки отдельных комнат. Наша команда экспертов обеспечивает детальные визуальные оценки, индивидуальные мудборды и тщательно отобранные товары, которые идеально соответствуют вашему видению и бюджету. Хотите ли вы мебель, которая рассказывает вашу историю, текстиль, который придаёт тепло и характер, или декоративные элементы, создающие идеальную атмосферу, — мы здесь, чтобы направлять вас на каждом шагу создания пространства, которое вы по-настоящему полюбите. Мы также распространяем наш опыт на коммерческие помещения, помогая бизнесу создавать среды, которые вдохновляют и приветствуют. От поиска уникальных предметов до их расстановки для максимального эффекта — мы делаем красивый, функциональный дизайн доступным для каждого.">Transform your living space into a haven of style and comfort with our comprehensive interior design and lifestyle consulting services. We offer personalized solutions that reflect your unique personality and lifestyle needs, from complete home makeovers to specific room redesigns. Our expert team provides detailed visual assessments, custom moodboards, and carefully curated product selections that perfectly match your vision and budget. Whether you're looking for furniture that tells your story, textiles that add warmth and character, or decorative elements that create the perfect ambiance, we're here to guide you through every step of creating a space you'll truly love. We also extend our expertise to commercial spaces, helping businesses create environments that inspire and welcome. From sourcing unique pieces to arranging them for maximum impact, we make beautiful, functional design accessible to everyone.</p>
+                    </div>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">🏠</div>
+                            <h4 data-en="Visual Space Assessment" data-ru="Анализ пространства">Visual Space Assessment</h4>
+                            <p data-en="Professional styling advice to transform your living spaces" data-ru="Профессиональная оценка вашего пространства с индивидуальными рекомендациями по преображению">Professional styling advice to transform your living spaces</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">🎨</div>
+                            <h4 data-en="Decoration Guidance" data-ru="Мастерская декора">Decoration Guidance</h4>
+                            <p data-en="Using textiles, furniture, plants, and artwork to enhance your home" data-ru="Превращаем дом в произведение искусства! Текстиль, мебель, растения и декор — создаем гармонию в вашем пространстве">Using textiles, furniture, plants, and artwork to enhance your home</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">📋</div>
+                            <h4 data-en="Element Selection" data-ru="Подбор аксессуаров">Element Selection</h4>
+                            <p data-en="Selection and placement of decorative elements for optimal impact" data-ru="Каждая деталь важна! Поможем подобрать и идеально расставить декор, чтобы создать нужное настроение">Selection and placement of decorative elements for optimal impact</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">🏢</div>
+                            <h4 data-en="Commercial Spaces" data-ru="Бизнес-пространства">Commercial Spaces</h4>
+                            <p data-en="Recommendations for both home and commercial environments" data-ru="От уютных домов до стильных офисов! Профессиональные решения для всех типов помещений и событий">Recommendations for both home and commercial environments</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">🎭</div>
+                            <h4 data-en="Moodboards & Concepts" data-ru="Визуальные концепции">Moodboards & Concepts</h4>
+                            <p data-en="Creation of visual style concepts and mood boards" data-ru="Мечты становятся явью! Создаем красочные мудборды и концепции, чтобы вы могли увидеть свой будущий дом">Creation of visual style concepts and mood boards</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">✨</div>
+                            <h4 data-en="Comfort Creation" data-ru="Уют и красота">Comfort Creation</h4>
+                            <p data-en="Support in creating comfortable and visually appealing environments" data-ru="Создадим пространство, в котором сочетаются комфорт и красота. Ваш дом станет местом силы и вдохновения">Support in creating comfortable and visually appealing environments</p>
+                        </div>
+                    </div>
+
+                    <!-- Before/After Gallery -->
+                    <div class="before-after-gallery">
+                        <h3 data-en="Our Transformations" data-ru="Наши преображения">Our Transformations</h3>
+                        <div class="splide before-after-carousel" id="before-after-carousel">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="transformation-slide">
+                                            <div class="before-after-container">
+                                                <div class="before-section">
+                                                    <h4 class="before-after-label" data-en="Before" data-ru="До">Before</h4>
+                                                    <img src="images/wr-960.webp" alt="Before transformation" class="before-after-img" loading="lazy">
+                                                </div>
+                                                <div class="after-section">
+                                                    <h4 class="before-after-label" data-en="After" data-ru="После">After</h4>
+                                                    <img src="images/wr-960.webp" alt="After transformation" class="before-after-img" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="transformation-slide">
+                                            <div class="before-after-container">
+                                                <div class="before-section">
+                                                    <h4 class="before-after-label" data-en="Before" data-ru="До">Before</h4>
+                                                    <img src="images/wr-960.webp" alt="Before kitchen transformation" class="before-after-img" loading="lazy">
+                                                </div>
+                                                <div class="after-section">
+                                                    <h4 class="before-after-label" data-en="After" data-ru="После">After</h4>
+                                                    <img src="images/wr-960.webp" alt="After kitchen transformation" class="before-after-img" loading="lazy">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process Section -->
+                    <div class="process-section">
+                        <h3 data-en="Our Design Process" data-ru="Наш процесс дизайна">Our Design Process</h3>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <h4 data-en="Consultation" data-ru="Консультация">Consultation</h4>
+                                <p data-en="We begin with a comprehensive consultation to understand your vision, lifestyle, and preferences. During this initial meeting, we discuss your goals, budget, timeline, and any specific requirements you may have. This foundation ensures that every recommendation aligns perfectly with your unique needs and style preferences." data-ru="Мы начинаем с всеобъемлющей консультации, чтобы понять ваше видение, образ жизни и предпочтения. Во время этой первоначальной встречи мы обсуждаем ваши цели, бюджет, временные рамки и любые специфические требования, которые у вас могут быть. Эта основа гарантирует, что каждая рекомендация идеально соответствует вашим уникальным потребностям и стилевым предпочтениям.">We begin with a comprehensive consultation to understand your vision, lifestyle, and preferences. During this initial meeting, we discuss your goals, budget, timeline, and any specific requirements you may have. This foundation ensures that every recommendation aligns perfectly with your unique needs and style preferences.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <h4 data-en="Design Development" data-ru="Разработка дизайна">Design Development</h4>
+                                <p data-en="Based on our consultation, we create detailed design concepts and mood boards that capture your vision. Our team researches the latest trends, sources unique pieces, and develops color palettes that reflect your personality. We present multiple options, allowing you to see different approaches to achieving your dream space." data-ru="На основе нашей консультации мы создаем детальные дизайнерские концепции и мудборды, которые отражают ваше видение. Наша команда исследует новейшие тренды, находит уникальные предметы и разрабатывает цветовые палитры, отражающие вашу личность. Мы представляем несколько вариантов, позволяя вам увидеть различные подходы к достижению пространства вашей мечты.">Based on our consultation, we create detailed design concepts and mood boards that capture your vision. Our team researches the latest trends, sources unique pieces, and develops color palettes that reflect your personality. We present multiple options, allowing you to see different approaches to achieving your dream space.</p>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <h4 data-en="Implementation" data-ru="Реализация">Implementation</h4>
+                                <p data-en="Once the design is approved, we handle all aspects of implementation. From sourcing furniture and accessories to coordinating deliveries and installations, we manage every detail. Our network of trusted suppliers and craftspeople ensures high-quality results, while our project management keeps everything on schedule and within budget." data-ru="После утверждения дизайна мы берем на себя все аспекты реализации. От поиска мебели и аксессуаров до координации доставки и установки — мы управляем каждой деталью. Наша сеть проверенных поставщиков и мастеров обеспечивает высококачественные результаты, а наше управление проектом сохраняет все в графике и в рамках бюджета.">Once the design is approved, we handle all aspects of implementation. From sourcing furniture and accessories to coordinating deliveries and installations, we manage every detail. Our network of trusted suppliers and craftspeople ensures high-quality results, while our project management keeps everything on schedule and within budget.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonials Section -->
+                    <div class="testimonials-section">
+                        <h3 data-en="What Our Clients Say" data-ru="Отзывы наших клиентов">What Our Clients Say</h3>
+                        <div class="testimonials-grid">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">“</div>
+                                <p data-en="CraftiCo.Home transformed our living space beyond our wildest dreams. Their attention to detail and understanding of our lifestyle needs made the entire process smooth and enjoyable. We couldn't be happier with our beautiful new home!" data-ru="CraftiCo.Home преобразили наше жилое пространство сверх наших самых смелых мечт. Их внимание к деталям и понимание наших жизненных потребностей сделали весь процесс плавным и приятным. Мы не можем быть счастливее с нашим красивым новым домом!">CraftiCo.Home transformed our living space beyond our wildest dreams. Their attention to detail and understanding of our lifestyle needs made the entire process smooth and enjoyable. We couldn't be happier with our beautiful new home!</p>
+                                <div class="testimonial-author" data-en="- Sarah & John M." data-ru="- Сара и Джон М.">- Sarah & John M.</div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="quote-icon">“</div>
+                                <p data-en="The team's expertise in commercial space design helped us create an office environment that truly reflects our brand and inspires our employees. The project was completed on time and within budget, exceeding all our expectations." data-ru="Экспертиза команды в дизайне коммерческих помещений помогла нам создать офисную среду, которая по-настоящему отражает наш бренд и вдохновляет наших сотрудников. Проект был завершен вовремя и в рамках бюджета, превзойдя все наши ожидания.">The team's expertise in commercial space design helped us create an office environment that truly reflects our brand and inspires our employees. The project was completed on time and within budget, exceeding all our expectations.</p>
+                                <div class="testimonial-author" data-en="- Maria Rodriguez, CEO" data-ru="- Мария Родригес, Генеральный директор">- Maria Rodriguez, CEO</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CraftiCo.play Section -->
+            <section id="play" class="section play-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 data-en="CraftiCo.Play" data-ru="CraftiCo.Play">CraftiCo.Play</h2>
+                        <p class="section-description" data-en="A future division focused on creativity, aesthetics, and hands-on activities. Details will be added as the concept develops." data-ru="Новое направление, посвященное играм, творчеству и развитию. Мы работаем над удивительными проектами для вас!">A future division focused on creativity, aesthetics, and hands-on activities. Details will be added as the concept develops.</p>
+                    </div>
+                    
+                    <div class="coming-soon">
+                        <div class="coming-soon-icon">🎨</div>
+                        <h3 data-en="Coming Soon!" data-ru="Очень скоро!">Coming Soon!</h3>
+                        <p data-en="We're working on something amazing. Stay tuned for updates!" data-ru="Мы готовим нечто волшебное! Оставайтесь с нами — скоро вы всё узнаете!">We're working on something amazing. Stay tuned for updates!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <img src="images/Logo.svg" alt="CraftiCo Logo" class="footer-logo">
+                        <p data-en="Creative solutions for kids and homes" data-ru="Творческие решения для семьи и дома">Creative solutions for kids and homes</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4 data-en="Sections" data-ru="Направления">Sections</h4>
+                        <ul>
+                            <li><a href="#kids" data-en="CraftiCo.Kids" data-ru="CraftiCo.Kids">CraftiCo.Kids</a></li>
+                            <li><a href="#home" data-en="CraftiCo.Home" data-ru="CraftiCo.Home">CraftiCo.Home</a></li>
+                            <li><a href="#play" data-en="CraftiCo.Play" data-ru="CraftiCo.Play">CraftiCo.Play</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 data-en="Connect" data-ru="Общение">Connect</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/craftico.kids" target="_blank">Instagram</a></li>
+                            <li><a href="https://t.me/craftico_kids" target="_blank">Telegram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 CraftiCo L.L.C. <span data-en="All rights reserved." data-ru="Все права сохранены.">All rights reserved.</span></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
